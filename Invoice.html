@@ -1,0 +1,78 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> Invoice Manager - Proj 1</title>
+	<meta name="author" content="Kitiara See">
+	<script type = "text/javascript" src = "invoice2.js"></script>
+	<link rel = "stylesheet" type = "text/css" href = "invoice.css">
+</head>
+
+<body>
+	<h1> Invoice Manager </h1>
+	
+    <form>
+		<p>
+			<label for = "code"> Item Code:</label>
+			 <input type = "text" id = "code" name = "code">
+		</p>
+		
+		<p>
+			<label for = "name"> Item Name: </label>
+			 <input type = "text" id = "name" name = "name">
+		<p>
+		
+		<p>
+			<label for = "quant"> Quantity: </label>
+			 <input type = "text" id = "quant" name = "quant">
+		</p>
+		
+		<p>
+			<label for = "cost"> Item Cost: </label>
+			 <input type = "text" id = "cost" name = "cost">
+		</p>
+		
+		<p>
+			<button id = "mySubmit"> Add Item </button>
+			<button id = "delItem"> Delete Line </button>
+			<input type = "reset" id = "clear" value = "Clear Form">
+		</p>
+	</form>
+	
+	<p id = "info"> 
+			* If you wish to delete an item from the table click the box at the end of the line <br>
+			Please pick only one as our system is not updated to properly handle more than one delete
+	</p>
+	
+	<table id = "Inv">
+		<tbody>
+		<tr id = "head">
+			<th> Code </th>
+			<th> Name </th> 
+			<th> Quantity </th>
+			<th> Item Cost </th> 
+			<th> Line Cost </th>
+			<th> Delete Line? </th>
+		</tr>
+		</tbody>
+	</table>
+	
+	<form>
+		<p>
+			Subtotal:
+			 <input type = "text" id = "sub" name = "sub" disabled = true>
+		</p>
+		
+		<p>
+			Sales Tax: 
+			 <input type = "text" id = "tax" name = "tax" disabled = true>
+		</p>
+		
+		<p>
+			Total:
+			 <input type = "text" id = "total" name = "total" disabled = true>
+		</p>
+	</form>
+	
+</body>
+</html>
